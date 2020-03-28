@@ -1,21 +1,22 @@
 const input = $("#word");
 const output = $("#wordstonked");
 const button = $("button");
-const werdParagraph = $("#werd")
+const werdParagraph = $("#werd");
 
 // on page load
 $(function() {
-
   // position the werd text div over the appropriate spot
   var stonksImage = $("#stonks_image");
   var stonkImageHeight = stonksImage.height();
   var stonkImageWidth = stonksImage.width();
-  var stonkImagePosition = stonksImage.position()
+  var stonkImagePosition = stonksImage.position();
 
   var werdContainer = $("#werd_container");
-  werdContainer.css({top: stonkImagePosition.top+stonkImageHeight*.51, left: stonkImagePosition.left+stonkImageWidth*.6})
-  console.log("pageload done")
-
+  werdContainer.css({
+    top: stonkImagePosition.top + stonkImageHeight * 0.51,
+    left: stonkImagePosition.left + stonkImageWidth * 0.6
+  });
+  console.log("pageload done");
 });
 
 // handle click and add class
